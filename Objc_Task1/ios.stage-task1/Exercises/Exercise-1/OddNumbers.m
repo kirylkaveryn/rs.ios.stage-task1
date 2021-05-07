@@ -11,7 +11,28 @@
 @implementation OddNumbers
 
 - (NSInteger)oddNumbers:(NSArray <NSNumber *> *)array {
-    return -1;
+    
+//    NSInteger arrayLength = array.count;
+    
+//    NSLog(@"%lu", arrayLength);
+    
+    NSInteger sum = 0;
+
+//    for (unsigned long i = 0; i < arrayLength; i++) {
+//
+//        if ([[array objectAtIndex:i] intValue] % 2 != 0) {
+//            sum ++;
+//        }
+//    }
+    
+    for (NSNumber *number in array) {
+    
+        if (number.intValue % 2 != 0) {
+            sum ++;
+        }
+    }
+    
+    return sum;
 }
 
 @end
