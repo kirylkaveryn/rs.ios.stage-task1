@@ -4,6 +4,7 @@
 
 - (NSArray *)numberConverter:(NSNumber *)number {
     
+    // Method 1: convert number to string, delete all "-" and add each char to array from the end to star
     
     // alloc memory for Mutable Array
     NSMutableArray *array = [[NSMutableArray alloc] init];
@@ -31,7 +32,7 @@
     }
 
     
-//    Method 2: creat an array by adding converted to char the rest from /10
+//    Method 2: create an array by adding converted to char the rest from /10
 //
 //    for (unsigned long i = 0; i < lenght; i++) {
 //
@@ -50,6 +51,7 @@
 //    }
     
     NSArray *returnArray = [array copy];
+
     return returnArray;
 }
 
